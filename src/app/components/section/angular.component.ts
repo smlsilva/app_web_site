@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 @Component ({
     standalone: true,
     imports: [],
-    selector: "app-main",
-    templateUrl: "main.html",
+    selector: "app-section",
+    templateUrl: "section.html",
     styleUrl: "style.css"
 })
 

@@ -1,11 +1,11 @@
 import { Component } from "@angular/core";
-import { HeaderComponent } from "./components/header/angular.component";
-import { SectionComponent } from "./components/section/angular.component";
+import { RouterOutlet } from "@angular/router";
+import { ViewHome } from "./view/Home/angular.component";
 
 @Component ({
     standalone: true,
     selector: "app-root",
-    imports: [HeaderComponent, SectionComponent],
+    imports: [ViewHome, RouterOutlet],
     templateUrl: "./app.html",
     styles: ""
 })

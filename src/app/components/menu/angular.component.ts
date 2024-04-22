@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { UserService } from "../../services/login.service";
 
 @Component({
     standalone: true,
@@ -10,6 +11,8 @@ import { CommonModule } from "@angular/common";
 })
 
 export class MenuComponent {
+    
+    private service = inject(UserService);
 
     validador: boolean = false;
 
