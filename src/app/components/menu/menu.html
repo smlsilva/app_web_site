@@ -3,6 +3,7 @@
     <li>Contato</li>
     <li>Sobre</li>
     <li *ngIf="isLogin()">User</li>
-    <li *ngIf="!isLogin()">Login</li>
-    <li>Cadastre-se</li>
+    <img src="../../../assets/exit.png" alt="Sair do sistema" *ngIf="isLogin()" (click)="logout()" width="25px">
+    <li *ngIf="!isLogin()" (click)="logged()">Login</li>
+    <li *ngIf="!isLogin()">Cadastre-se</li>
 </ul>

@@ -8,6 +8,6 @@ import { Component } from "@angular/core";
     styleUrl: "style.css"
 })
 
-export class MainComponent {
+export class SectionComponent {
     
 }

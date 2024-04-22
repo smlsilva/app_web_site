@@ -11,8 +11,18 @@ import { CommonModule } from "@angular/common";
 
 export class MenuComponent {
 
+    validador: boolean = false;
+
     isLogin() {
-        return false;
+        return this.validador;
+    }
+
+    logged() {
+        this.validador = this.validador ? false : true;
+    }
+    
+    logout() {
+        this.validador = false;
     }
 
 }
