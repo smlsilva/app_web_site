@@ -1,0 +1,8 @@
+<ul class="container-menu">
+    <li>Serviços</li>
+    <li>Contato</li>
+    <li>Sobre</li>
+    <li *ngIf="isLogin()">User</li>
+    <li *ngIf="!isLogin()">Login</li>
+    <li>Cadastre-se</li>
+</ul>
