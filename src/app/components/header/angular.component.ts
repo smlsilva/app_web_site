@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { MenuComponent } from "../menu/angular.component";
+import { MenuComponent } from "../menu/menu.component";
 
 @Component({
     standalone: true,
